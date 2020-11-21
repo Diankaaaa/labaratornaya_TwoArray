@@ -1,0 +1,28 @@
+﻿<Window x:Class="labaratornaya_TwoArray.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:labaratornaya_TwoArray"
+        mc:Ignorable="d"
+        Title="Двумерный массив" Height="523.5" Width="800" FontSize="16">
+    <Grid Background="#FF303030">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="350*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="218,7,218,10" HorizontalAlignment="Center" Width="356">
+            <TextBox x:Name="NRow" Width="100" Margin="10 0 10 0" FontSize="16" Foreground="White" Background="#FF818181" />
+            <TextBox x:Name="NCol" Width="100" Margin="10 0 10 0" FontSize="16" Foreground="White" Background="#FF818181"/>
+            <Button Content="Сгенерировать" Click="Button_Click" FontSize="16" Foreground="White" Background="#FF818181"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Margin="346,12,346,16" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="100">
+            <Button Content="Очистить" Width="100" Height="50" Click="Button_Click_1" FontSize="16" Foreground="White" Background="#FF818181" />
+        </StackPanel>
+        <TextBlock Grid.Row="3" x:Name="Result" Margin="10 10 10 10" Background="#FF818181" Foreground="White" FontSize="16"/>
+        <Label Content="Строка" HorizontalAlignment="Left" Height="36" Margin="218,32,0,0" VerticalAlignment="Top" Width="150" Foreground="White" Grid.Row="1" Grid.RowSpan="2"/>
+        <Label Content="Столбец" HorizontalAlignment="Left" Height="36" Margin="339,32,0,0" VerticalAlignment="Top" Width="150" Foreground="White" Grid.Row="1" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
