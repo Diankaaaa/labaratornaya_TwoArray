@@ -36,7 +36,7 @@ namespace labaratornaya_TwoArray
                 int n = int.Parse(NRow.Text); //Количество строк
                 int m = int.Parse(NCol.Text); //Количество столбцов
 
-                //Чтобы избежать ошибки с типом данных, используется var, для неявной типизации 
+                //var для неявной типизации 
                 var d = Enumerable.Range(0, n).Select(v => Enumerable.Range(0, m).Select(c => r.Next(-100, 100)).ToArray()).ToArray();
                 var w = d.Select(v => v.Min()).ToArray();
 
